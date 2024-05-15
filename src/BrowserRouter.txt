@@ -1,0 +1,17 @@
+<BrowserRouter>
+  <App>
+    <Animation>
+      <AnimatePresence>
+        <Routes>
+          <Route>
+            <Body>  path={/}
+              <Hero>
+                <Navbar></Navbar>
+              </Hero>
+            </Body>
+          </Route>
+        </Routes>
+      </AnimatePresence>	
+    </Animation>		
+  </App>
+</BrowserRouter>

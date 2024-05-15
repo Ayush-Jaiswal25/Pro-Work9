@@ -1,0 +1,101 @@
+.nav{
+    /* border: 2px rgb(32, 177, 74) solid; */
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.navbar{
+    /* border: 2px rgb(233, 153, 6) solid; */
+    height: 100%;
+    width: 1250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2rem 0.9rem;
+    padding-bottom: 1rem;
+}
+.navbar-left h1{
+    /* border: 2px rgb(131, 6, 233) solid; */
+    font-size: 1.9rem;
+    padding: 0.5rem 1rem;
+}
+ b{
+    background-color: black;
+    color: white;
+    padding: 0 0.1rem;
+    border-radius: 0.6rem;
+    border: 2px black solid;
+} 
+
+/* Navbar Right */
+.navbar-right{
+    /* border: 2px rgb(6, 233, 78) solid; */
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.navbar-options-phone{
+    display: none;
+}
+.navbar-options-laptop{
+    /* border: 2px rgb(233, 6, 131) solid; */
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.jobs-explo{
+    color: black;
+    font-size: 13px;
+    border-radius: 5px;
+    border: 2px white solid;
+    cursor: pointer;
+}
+#exploreCheck{
+    display: none;
+}
+.jobs-explo:hover{
+    background-color: black;
+    color: white !important;
+    border-radius: 5px;
+    border: 2px black solid;
+}
+#user-btn{
+    display: flex;
+    background-color: white;
+    cursor: pointer;
+}
+#user-btn img{
+    height: 2.5rem;
+}
+
+/* Responsive */
+@media (max-width: 710px){
+    .navbar-left h1{
+        font-size: 1.5rem;
+    }
+    b{
+        border-radius: 0.5rem;
+    }
+    .navbar-right{
+        width: 50%;
+    }
+    .navbar-options-laptop{
+        width: 90%;
+    }
+}
+@media (max-width: 570px){
+    .navbar-left h1{
+        padding:0.5rem;
+    }
+    .navbar-right{
+        justify-content: end;
+    }
+    .navbar-options-laptop{
+        display: none;
+    }
+    .navbar-options-phone{
+        display: flex;
+    }
+}
